@@ -1,5 +1,5 @@
 import { OrbitControls, Sparkles } from '@react-three/drei';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 
 const BackGround1 = (props) => {
     let scale = Array.from({ length: 400 }, () => 0.5 + Math.random() * 3);
