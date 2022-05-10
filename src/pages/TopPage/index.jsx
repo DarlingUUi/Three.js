@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { Link } from 'react-router-dom';
 import style from "./TopPage.module.scss";
 
-const TopPage = (props) => {
+const TopPage = () => {
     let scale = Array.from({ length: 400 }, () => 0.5 + Math.random() * 3);
     const height = {
         margin: 0,
@@ -34,7 +34,7 @@ const TopPage = (props) => {
                 <div className={style.about}>
                     <div className={style.aboutPanel}>
                         <div className={style.topPanel}><div className={style.top}></div></div>
-                        <img src='assets/index.png' />
+                        <img src='assets/index.png' alt="background"/>
                         <div className={style.bottomPanel}><div className={style.bottom}></div></div>
                         <div className={style.content}>
                             <div>

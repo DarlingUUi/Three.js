@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./SideMenu.module.scss";
-const SideMenu = (props) => {
+const SideMenu = () => {
     const [click, setClick] = useState(false);
     return (
         <div className={`${style.navigation} ${click ? style.active : ""}`} onClick={() => setClick(!click)}>
