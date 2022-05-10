@@ -1,0 +1,25 @@
+.logoPanel {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 0px;
+
+    .logoside {
+        position: absolute;
+        left: 40px;
+        top: 75px;
+        z-index: 999;
+
+        div {
+            margin-bottom: 20px;
+        }
+    }
+
+    .language {
+        position: absolute;
+        right: 40px;
+        top: 75px;
+        z-index: 999;
+    }
+}

@@ -1,0 +1,164 @@
+.bg {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+}
+
+.landingMenu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .title {
+        h1 {
+            font-size: 80px;
+            margin: 10px;
+        }
+    }
+
+    .scrollBtn {
+        position: absolute;
+        bottom: 0px;
+
+        div {
+            position: relative;
+            width: 100%;
+            height: max-content;
+
+            span {
+                width: 0px;
+                height: 40px;
+                border-right: solid white 2px;
+            }
+
+            &:first-Child {
+                height: 100px;
+                padding-top: 50px;
+            }
+        }
+
+    }
+
+    .about {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .aboutPanel {
+            position: relative;
+            width: 1300px;
+            height: 60%;
+            opacity: 0.7;
+            // border: solid green 1px;
+
+            .topPanel {
+                position: absolute;
+                width: 80%;
+                height: 40px;
+                // border: solid red 1px;
+                padding: 0 10% 0 10%;
+                margin-top: 20px;
+
+                .top {
+                    position: relative;
+                    border: solid #0075c9 1px;
+                    border-bottom: 0px;
+                    height: 40px;
+                    z-index: 100;
+                }
+            }
+
+            .bottomPanel {
+                position: absolute;
+                width: 80%;
+                height: 40px;
+                // border: solid red 1px;
+                padding: 0 10% 0 10%;
+                margin-top: -70px;
+
+                .bottom {
+                    position: relative;
+                    border: solid #0075c9 1px;
+                    border-top: 0px;
+                    height: 40px;
+                    z-index: 100;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                opacity: 0.7;
+            }
+
+            .content {
+                // border: solid #0075c9 1px;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+
+                div {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    // border: solid red 1px;
+
+                    div {
+                        display: block;
+                        width: 70%;
+                        height: 70%;
+
+                        h1 {
+                            background: linear-gradient(to right, #00a8ea, #00429e);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            margin-bottom: 30px;
+                        }
+
+                        div {
+                            // border: solid red 1px;
+                            padding: 0px;
+                            width: 100%;
+                            height: min-content;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            p {
+                                font-size: 20px;
+                                width: 70%;
+                                line-height: 40px;
+                            }
+                        }
+
+                        .aboutBtn {
+                            box-sizing: border-box;
+                            margin: 80px;
+                            color: white;
+                            text-decoration: none;
+                            width: 400px;
+                            height: 40px;
+                            padding: 10px 40px;
+                            border: solid #008ee4 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

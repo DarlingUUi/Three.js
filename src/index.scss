@@ -1,3 +1,5 @@
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
 @import url('https://rsms.me/inter/inter.css');
 
 body {
@@ -26,6 +28,10 @@ span {
     to {
         opacity: 1;
     }
+}
+
+#root{
+    height: 100vh;
 }
 
 canvas {

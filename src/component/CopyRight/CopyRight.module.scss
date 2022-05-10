@@ -1,0 +1,13 @@
+.copyright {
+    position: absolute;
+    height: max-content;
+    left: 25px;
+    bottom: 30px;
+    writing-mode: vertical-rl;
+    margin: 0px;
+    padding: 0px;
+    z-index: 10;
+    p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,81 @@
+.navigation {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 100%;
+    bottom: 0px;
+    background-color: black;
+    z-index: 100;
+
+    a {
+        position: absolute;
+        width: 50px;
+        top: 48%;
+        right: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    div {
+        display: none;
+    }
+}
+
+.active {
+    left: 0px;
+
+    div {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+
+        nav {
+            ul {
+                padding: 0px;
+
+                li {
+                    padding: 10px;
+                    list-style: none;
+                    line-height: normal;
+
+                    a {
+                        width: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        text-decoration: none;
+                        position: relative;
+                        font-size: 70px;
+                        font-weight: bold;
+                        padding: 0;
+                        background: white;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        transition: background 2s;
+                        -webkit-transition: background 2s;
+
+                        &:hover {
+                            background: linear-gradient(to right, #00a8ea, #00429e);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+
+                    &:last-child {
+                        margin: 20px;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            position: relative;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
