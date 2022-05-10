@@ -14,9 +14,9 @@ const LogoPanel = () => {
                 </div>
             </div>
             <div className={style.language}>
-                <a>
+                <p>
                     JP / EN
-                </a>
+                </p>
             </div>
         </div >
     );

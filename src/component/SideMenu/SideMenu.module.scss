@@ -7,13 +7,16 @@
     background-color: black;
     z-index: 100;
 
-    a {
+    button {
         position: absolute;
         width: 50px;
         top: 48%;
         right: 20px;
         text-align: center;
         font-size: 30px;
+        color: white;
+        background-color: transparent;
+        border: none;
     }
 
     div {

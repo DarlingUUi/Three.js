@@ -5,7 +5,7 @@ const SideMenu = () => {
     const [click, setClick] = useState(false);
     return (
         <div className={`${style.navigation} ${click ? style.active : ""}`} onClick={() => setClick(!click)}>
-            <a className={`fa ${click ? "fa-close" : "fa-th"}`} onClick={() => setClick(!click)} />
+            <button className={`fa ${click ? "fa-close" : "fa-th"}`} onClick={() => setClick(!click)} />
             <div>
                 <nav className="nav">
                     <ul>
