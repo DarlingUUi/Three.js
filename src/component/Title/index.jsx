@@ -6,7 +6,7 @@ const Title = ({ title, fontSize, letterSpacing }) => {
         letterSpacing
     }
     return (
-        <h1 style={customStyle}>{title}</h1>
+        <h1 className={style.title} style={customStyle}>{title}</h1>
     );
 }
 

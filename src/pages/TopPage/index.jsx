@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import Title from '../../component/Title';
+// import Title from '../../component/Title';
 import Universe from '../../component/Universe';
 import style from "./TopPage.module.scss";
 
