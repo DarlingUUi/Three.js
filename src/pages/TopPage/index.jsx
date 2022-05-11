@@ -10,7 +10,7 @@ const TopPage = () => {
     }
     return (
         <>
-            <Universe/>
+            <Universe />
             {/* <div className={style.landingMenu}>
                 <div className={style.introduce}>
                     <div className={style.title}>
@@ -45,7 +45,7 @@ const TopPage = () => {
                     </div>
                 </div>
             </div> */}
-            <div className={style.landingMenu}>
+            {/* <div className={style.landingMenu}>
                 <div className={style.product}>
                     <div>
                         <Title title="PRODUCT" />
@@ -56,8 +56,8 @@ const TopPage = () => {
                         <Link className={style.productLink} to="/product">MORE</Link>
                     </div>
                 </div>
-            </div>
-            {/* <div className={style.landingMenu}>
+            </div> */}
+            <div className={style.landingMenu}>
                 <div className={style.contact}>
                     <Link to="/contact"></Link>
                     <div className={style.contactBtn} onClick={() => onClickRoute("contact")}>
@@ -69,7 +69,7 @@ const TopPage = () => {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </>
     );
 }
