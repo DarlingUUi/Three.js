@@ -1,7 +1,6 @@
-import { OrbitControls, Sparkles } from '@react-three/drei';
-import { Canvas } from '@react-three/fiber';
 import { Link, useNavigate } from 'react-router-dom';
-import Footer from '../../component/Footer';
+import Title from '../../component/Title';
+import Universe from '../../component/Universe';
 import style from "./TopPage.module.scss";
 
 const TopPage = () => {
@@ -9,21 +8,9 @@ const TopPage = () => {
     const onClickRoute = (_route) => {
         navigate(_route);
     }
-    let scale = Array.from({ length: 400 }, () => 0.5 + Math.random() * 3);
-    const height = {
-        margin: 0,
-        height: window.innerHeight,
-        boxShadow: "inset 0px 0px 300px 300px rgba(0, 0, 8, 1)"
-    };
     return (
-
         <>
-            <div className={style.bg}>
-                <Canvas style={height} camera={{ fov: 45, position: [0, 0, -4] }}>
-                    <Sparkles count={scale.length} size={scale} position={[0, 0, 0]} scale={[10, 5, 10]} speed={0.5} noise={[5, 5, 5]} color={'#00BBFF'} />
-                    <OrbitControls enableZoom={false} enablePan={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} />
-                </Canvas>
-            </div>
+            <Universe/>
             {/* <div className={style.landingMenu}>
                 <div className={style.introduce}>
                     <div className={style.title}>
@@ -58,10 +45,10 @@ const TopPage = () => {
                     </div>
                 </div>
             </div> */}
-            {/* <div className={style.landingMenu}>
+            <div className={style.landingMenu}>
                 <div className={style.product}>
                     <div>
-                        <h1>PRODUCT</h1>
+                        <Title title="PRODUCT" />
                         <p>
                             The device is compatible with low profile microcatheters,
                             enabling it to approach distal arteries.
@@ -69,8 +56,8 @@ const TopPage = () => {
                         <Link className={style.productLink} to="/product">MORE</Link>
                     </div>
                 </div>
-            </div> */}
-            <div className={style.landingMenu}>
+            </div>
+            {/* <div className={style.landingMenu}>
                 <div className={style.contact}>
                     <Link to="/contact"></Link>
                     <div className={style.contactBtn} onClick={() => onClickRoute("contact")}>
@@ -82,8 +69,7 @@ const TopPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <Footer/>
+            </div> */}
         </>
     );
 }

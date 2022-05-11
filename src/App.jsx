@@ -6,6 +6,7 @@ import Product from './pages/Product';
 import TopPage from './pages/TopPage';
 import LogoPanel from './component/LogoPanel';
 import CopyRight from './component/CopyRight';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/' exact element={<TopPage />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

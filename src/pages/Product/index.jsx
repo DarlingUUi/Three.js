@@ -1,6 +1,10 @@
+import Universe from "../../component/Universe";
+
 const Product = () => {
     return (
-        <p>Product</p>
+        <>
+            <Universe />
+        </>
     );
 }
 export default Product;

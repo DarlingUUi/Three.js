@@ -1,6 +1,10 @@
+import Universe from "../../component/Universe";
+
 const Contact = () => {
     return (
-        <p>Contact</p>
+        <>
+            <Universe />
+        </>
     );
 }
 export default Contact;

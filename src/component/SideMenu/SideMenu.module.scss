@@ -1,5 +1,5 @@
 .navigation {
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     left: 100%;
@@ -61,7 +61,11 @@
                         -webkit-transition: background 2s;
 
                         &:hover {
-                            background: linear-gradient(to right, #00a8ea, #00429e);
+                            background: -webkit-linear-gradient(to right, #00a8ea 0%, #00429e 100%);
+                            background: -moz-linear-gradient(to right, #00a8ea 0%, #00429e 100%);
+                            background: -o-linear-gradient(to right, #00a8ea 0%, #00429e 100%);
+                            background: -ms-linear-gradient(to right, #00a8ea 0%, #00429e 100%);
+                            background: linear-gradient(to right, #00a8ea 0%, #00429e 100%);
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
                         }

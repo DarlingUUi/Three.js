@@ -1,9 +1,10 @@
 .logoPanel {
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     left: 0px;
     height: 0px;
+    z-index: 1;
 
     .logoside {
         position: absolute;
