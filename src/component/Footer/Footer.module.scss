@@ -23,7 +23,9 @@
             border: solid #0082e1 1px;
             width: 33.333%;
             height: 70px;
-
+            &:hover{
+                background-color: rgba(0,21,69,0.5);
+            }
             a {
                 position: relative;
                 width: 100%;
