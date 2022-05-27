@@ -14,20 +14,56 @@
         align-items: center;
 
         .title {
-            h1 {
+            overflow: visible;
+
+            .title0 {
+                position: relative;
                 font-size: 80px;
                 margin: 10px;
+
+                animation-name: titleAppear;
+                animation-duration: 1s;
+                animation-delay: 0s;
+            }
+
+            .title1 {
+                position: relative;
+                font-size: 80px;
+                margin: 10px;
+
+                animation-name: titleAppear;
+                animation-duration: 2s;
+                animation-delay: 0s;
+            }
+
+            .title2 {
+                position: relative;
+                font-size: 80px;
+                margin: 10px;
+
+                animation-name: titleAppear;
+                animation-duration: 3s;
+                animation-delay: 0s;
             }
         }
 
         .scrollBtn {
-            position: absolute;
-            bottom: 0px;
+            animation-name: scrollAppear;
+            animation-duration: 4s;
+            animation-delay: 0s;
 
-            div {
-                position: relative;
-                width: 100%;
-                height: max-content;
+
+            cursor: pointer;
+            position: fixed;
+            width: 50px;
+            height: 100px;
+            bottom: 10px;
+            right: 50%;
+            transition: bottom 1s;
+
+            .verticalLine {
+                position: absolute;
+                bottom: 50px;
 
                 span {
                     width: 0px;
@@ -35,12 +71,22 @@
                     border-right: solid white 2px;
                 }
 
-                &:first-Child {
-                    height: 100px;
-                    padding-top: 50px;
+            }
+
+            .scrollTitle {
+                position: absolute;
+                bottom: 10px;
+
+                span {
+                    font-size: 12px;
+                    position: absolute;
+                    left: 0px;
                 }
             }
 
+            &:hover {
+                bottom: 20px;
+            }
         }
     }
 
@@ -56,15 +102,16 @@
             position: relative;
             width: 1300px;
             height: 60%;
-            // border: solid green 1px;
 
             .topPanel {
                 position: absolute;
                 width: 80%;
                 height: 40px;
-                // border: solid red 1px;
                 padding: 0 10% 0 10%;
                 margin-top: 20px;
+                animation-name: topPanelAppear;
+                animation-duration: 1s;
+                animation-delay: 0s;
 
                 .top {
                     position: relative;
@@ -79,9 +126,11 @@
                 position: absolute;
                 width: 80%;
                 height: 40px;
-                // border: solid red 1px;
                 padding: 0 10% 0 10%;
                 margin-top: -70px;
+                animation-name: bottomPanelAppear;
+                animation-duration: 1s;
+                animation-delay: 0s;
 
                 .bottom {
                     position: relative;
@@ -96,6 +145,9 @@
                 width: 100%;
                 height: 100%;
                 opacity: 0.7;
+                animation-name: bgAppear;
+                animation-duration: 1s;
+                animation-delay: 0s;
             }
 
             .content {
@@ -128,10 +180,17 @@
                             top: 20%;
                             right: 0px;
                             left: 0px;
+                            animation-name: aboutAppear;
+                            animation-duration: 3s;
+                            animation-delay: 0s;
                         }
 
                         h1 {
+                            position: relative;
                             margin-bottom: 30px;
+                            animation-name: titleAppear;
+                            animation-duration: 1s;
+                            animation-delay: 0s;
                         }
 
                         div {
@@ -142,6 +201,9 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            animation-name: letterAppear;
+                            animation-duration: 1.5s;
+                            animation-delay: 0s;
 
                             p {
                                 font-size: 20px;
@@ -155,6 +217,9 @@
                             bottom: 0px;
                             left: 50%;
                             width: 0px;
+                            animation-name: aboutButtonAppear;
+                            animation-duration: 3s;
+                            animation-delay: 0s;
 
                             .aboutLink {
                                 position: relative;
@@ -190,8 +255,13 @@
             width: 70%;
 
             h1 {
+                position: relative;
                 font-size: 60px;
                 margin: 20px 0px;
+
+                animation-name: titleAppear;
+                animation-duration: 1s;
+                animation-delay: 0s;
             }
 
             p {
@@ -211,6 +281,9 @@
                 border: solid #008ee4 1px;
                 text-align: center;
                 box-sizing: border-box;
+                animation-name: aboutButtonAppear;
+                animation-duration: 3s;
+                animation-delay: 0s;
 
                 &:hover {
                     text-shadow: 0px 0px 5px #008ee4;
@@ -266,6 +339,22 @@
     }
 }
 
+@keyframes titleAppear {
+    0% {
+        opacity: 0;
+        top: 150px;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
 @keyframes contact-movement {
     0% {
         left: 0px;
@@ -282,3 +371,83 @@
         top: 135px;
     }
 }
+
+@keyframes scrollAppear {
+    0% {
+        opacity: 0;
+        bottom: 0px;
+    }
+    50% {
+        opacity: 0;
+        bottom: 0px;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 10px;
+    }
+}
+
+@keyframes topPanelAppear {
+    0% {
+        margin-top: -30px;
+    }
+    100% {
+        margin-top: 20px;
+    }
+}
+
+@keyframes bottomPanelAppear {
+    0% {
+        margin-top: -20px;
+    }
+    100% {
+        margin-top: -70px;
+    }
+}
+
+@keyframes bgAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes aboutAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes titleAppear {
+    0% {
+        top: -40px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes letterAppear {
+    0% {
+        top: -40px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes aboutButtonAppear {
+    0% {
+        bottom: -40px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+

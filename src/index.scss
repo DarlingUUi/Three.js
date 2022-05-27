@@ -5,10 +5,12 @@ $fa-font-path: "~font-awesome/fonts";
 body {
     width: 100%;
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
     margin: 0;
     padding: 0;
-    background: rgb(1, 5, 66);
+    background: black;
+    background-image: radial-gradient(#212d57, #06183d);
+
     color: white;
     font-family: 'Inter var', sans-serif;
 }

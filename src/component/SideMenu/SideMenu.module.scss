@@ -1,38 +1,33 @@
+.menubutton {
+    position: fixed;
+    width: 50px;
+    top: 48%;
+    right: 20px;
+    text-align: center;
+    font-size: 30px !important;
+    color: white;
+    background-color: transparent;
+    border: none;
+    z-index: 200;
+}
+
 .navigation {
+    background-color: black;
     position: fixed;
     top: 0px;
     right: 0px;
-    left: 100%;
     bottom: 0px;
-    background-color: black;
-    z-index: 100;
-
-    button {
-        position: absolute;
-        width: 50px;
-        top: 48%;
-        right: 20px;
-        text-align: center;
-        font-size: 30px;
-        color: white;
-        background-color: transparent;
-        border: none;
-    }
-
-    div {
-        display: none;
-    }
-}
-
-.active {
     left: 0px;
+    z-index: 199;
+    animation-name: menu-panel-appear;
+    animation-duration: 0.2s;
+    animation-delay: 0s;
 
     div {
         display: flex;
-        width: 100%;
-        height: 100%;
         justify-content: center;
         align-items: center;
+        height: 100%;
 
         nav {
             ul {
@@ -54,20 +49,11 @@
                         font-size: 70px;
                         font-weight: bold;
                         padding: 0;
-                        background: white;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        transition: background 2s;
-                        -webkit-transition: background 2s;
+                        color: white;
+                        transition: color 0.5s;
 
                         &:hover {
-                            background: -webkit-linear-gradient(to right, #00a8ea 0%, #00429e 100%);
-                            background: -moz-linear-gradient(to right, #00a8ea 0%, #00429e 100%);
-                            background: -o-linear-gradient(to right, #00a8ea 0%, #00429e 100%);
-                            background: -ms-linear-gradient(to right, #00a8ea 0%, #00429e 100%);
-                            background: linear-gradient(to right, #00a8ea 0%, #00429e 100%);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
+                            color: #00429e;
                         }
                     }
 
@@ -84,5 +70,72 @@
                 }
             }
         }
+    }
+}
+
+.menuList0 {
+    animation-name: titleAppear;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+}
+
+.menuList1 {
+    animation-name: titleAppear;
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+}
+
+.menuList2 {
+    animation-name: titleAppear;
+    animation-duration: 1.1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+}
+
+.menuList3 {
+    animation-name: titleAppear;
+    animation-duration: 1.4s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+}
+
+.menuList4 {
+    animation-name: titleAppear;
+    animation-duration: 1.7s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+}
+
+@keyframes menu-panel-appear {
+    0% {
+        background-color: #00289700;
+        top: 50%;
+        right: 50%;
+        bottom: 50%;
+        left: 50%;
+    }
+
+    100% {
+        background-color: black;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes titleAppear {
+    0% {
+        opacity: 0.0;
+        top: 150px;
+        left: -100px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+        left: 0px;
     }
 }

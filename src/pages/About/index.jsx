@@ -25,6 +25,23 @@ const About = () => {
                 <div className={style.companyImg}>
                     <img alt='company' src='assets/company-img.png' />
                 </div>
+                <div className={style.companyDetail}>
+                    <div className={style.profile}>
+                        <div className={style.type}>
+                            <h1>PROFILE</h1>
+                        </div>
+                        <div className={style.content}>
+                            <div className={style.row}>
+                                <div className={style.companyName}>
+                                    <span>Company Name</span>
+                                </div>
+                                <div className={style.companyLink}>
+                                    <span>Biomedical Solutions Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <selection id="mission" className={style.subList}>
                     <Title title="MISSION" letterSpacing={2} fontSize={60} />
                 </selection>

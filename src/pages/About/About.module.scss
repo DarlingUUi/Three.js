@@ -82,4 +82,44 @@
             width: 700px;
         }
     }
+
+    .companyDetail {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 100px 0px;
+
+        .profile {
+            width: 70%;
+            display: flex;
+
+            .type {
+                // border: solid red 1px;
+                float: left;
+                display: flex;
+                justify-content: center;
+                width: 40%;
+            }
+
+            .content {
+                width: 60%;
+                border: solid red 1px;
+
+                .row {
+                    width: 100%;
+                    border: solid red 1px;
+
+                    .companyName {
+                        width: 40%;
+                        height: 40px;
+                    }
+
+                    .companyLink {
+                        width: 60%;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
 }
