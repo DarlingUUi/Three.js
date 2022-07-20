@@ -1,1 +1,1 @@
-Three.js + React example
+Three.js + React example.
